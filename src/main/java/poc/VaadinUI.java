@@ -18,7 +18,7 @@ import javax.servlet.annotation.WebServlet;
 public class VaadinUI extends UI{
     @Override
     protected void init(VaadinRequest vaadinRequest) {
-        setContent(new Label("I'm a simple label"));
+        setContent(new Label("I'm a simple label, but i'm visible"));
     }
     @WebServlet(urlPatterns = "/*")
     @VaadinServletConfiguration(ui = VaadinUI.class, productionMode = false)
