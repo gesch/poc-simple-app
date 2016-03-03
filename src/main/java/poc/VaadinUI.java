@@ -11,14 +11,14 @@ import com.vaadin.ui.UI;
 import javax.servlet.annotation.WebServlet;
 
 /**
- * Created by GEsch on 03.03.2016.
+ * @author Guido Esch
  */
 @SpringUI(path = "/")
 @Theme("valo")
 public class VaadinUI extends UI{
     @Override
     protected void init(VaadinRequest vaadinRequest) {
-        setContent(new Label("Hello! I'm the root UI!"));
+        setContent(new Label("I'm a simple label"));
     }
     @WebServlet(urlPatterns = "/*")
     @VaadinServletConfiguration(ui = VaadinUI.class, productionMode = false)
